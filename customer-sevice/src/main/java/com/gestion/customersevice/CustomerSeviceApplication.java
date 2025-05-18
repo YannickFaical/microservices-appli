@@ -19,7 +19,7 @@ public class CustomerSeviceApplication {
 		return args -> {
 			customerRepository.save(Customer.builder()
 					.name("mohamed")
-					.email("mohammed").build());
+					.email("mohammed@gmail.com").build());
 
 			customerRepository.save(Customer.builder()
 					.name("yannick")
