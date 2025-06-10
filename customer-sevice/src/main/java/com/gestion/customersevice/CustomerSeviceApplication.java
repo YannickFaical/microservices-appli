@@ -1,13 +1,16 @@
 package com.gestion.customersevice;
 
+import com.gestion.customersevice.config.CustomerConfigParams;
 import com.gestion.customersevice.entities.Customer;
 import com.gestion.customersevice.repositories.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties(CustomerConfigParams.class)
 public class CustomerSeviceApplication {
 
 	public static void main(String[] args) {
